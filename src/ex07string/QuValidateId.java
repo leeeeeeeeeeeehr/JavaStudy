@@ -41,7 +41,7 @@ public class QuValidateId {
 
 		Scanner scanner = new Scanner(System.in);
 		
-		while (true) {  
+		while (true) {
 			System.out.print("아이디를 입력하세요: ");
 			String userId = scanner.next();
 			
