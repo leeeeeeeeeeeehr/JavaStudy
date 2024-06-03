@@ -9,7 +9,7 @@ public class QuPyramid02 {
 		
 		int a = 1;
 		
-		do {
+		do { 
 			int b = 5; 
 			
 			do {
