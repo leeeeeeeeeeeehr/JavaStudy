@@ -10,7 +10,7 @@ public class QuPyramid02 {
 		int a = 1;
 		
 		do {
-			int b = 5;
+			int b = 5; 
 			
 			do {
 				// b가 a와 같아질 떄까지 출력
