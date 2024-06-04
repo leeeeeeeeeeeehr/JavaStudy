@@ -15,7 +15,7 @@ public class QuFindPrimeNumber {
 	
 	public static boolean isPrimeNumber(int num) {
 		
-		if (num < 2) {
+		if (num == 1) {
 			return false;
 		}
 		else if (num == 2) {
