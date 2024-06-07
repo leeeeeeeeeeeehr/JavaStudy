@@ -21,21 +21,28 @@ public class E02HumanMain {
 		/* 3. 멤버메서드 호출
 		: 이를 통해 걷다, 먹다 등의 동작을 실행한다. */
 		human.showState();			// 인스턴스의 초기 상태 확인
+		System.out.println();
+		
 		human.eating();
 		human.walking();
 		human.thinking();
+		System.out.println();
+		
 		human.showState();			// 메서드 호출 후의 상태 확인
+		System.out.println();
 		
 		/* 4. 반복문을 통해 메서드 여러 번 호출
 		: 시나리오의 조건이 정확히 구현되었는지 확인한다. */
 		for (int i = 1; i <= 3; i++) {
 			human.walking();
 		}
+		System.out.println();
 		human.showState();
 		
 		for (int i = 1; i <= 3; i++) {
 			human.eating();
 		}
+		System.out.println();
 		human.showState();
 	}
 
