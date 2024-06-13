@@ -45,6 +45,7 @@ class Unit {
 	}
 	class Medic {
 		int healPower;
+		
 		public void heal() {
 			System.out.println(infoStr() + "\n메딕이 치료한다.");
 		}
@@ -58,15 +59,17 @@ public class E01InnerClassMain {
 		// 외부 클래스의 인스턴스를 먼저 생성한다.
 		Unit unit = new Unit("커맨드센터", 1000);
 		System.out.println(unit.infoStr());
+		System.out.println();
 		
 		/* 외부 클래스가 아닌 다른 클래스에서는
 		내부 멤버 클래스가 보이지 않으므로 직접 인스턴스를 생성할 수 없다. */
 //		Marine m = new Marine();	 // 에러 발생
 		
 		/* 외부 클래스의 인스턴스를 먼저 생성한 후 내부 클래스의 인스턴스를 생성해야 한다.
-		Marine은 Unit 클래스의 생성자에서 이미 인스턴스 생성이 되었으므로 아래와 같이 사용할 수 있다. */
+		Marine은 Unit 클래스의 생성자에서 이미 인스턴스를 생성했으므로 아래와 같이 사용할 수 있다. */
 		Unit.Marine marine = new Unit("마린", 50).marine;
 		marine.attack();
+		System.out.println();
 		
 		/* Medic의 경우, Unit의 생성자에서 인스턴스 생성이 되지 않았으므로 아래와 같이 new를 통해 생성해야 한다.
 		이때도 Unit 인스턴스를 통해 생성해야 하므로 new를 두 번 사용한다. */

@@ -1,4 +1,4 @@
-package ex16lambda;
+package ex18lambda;
 
 /* 1. 인터페이스와 클래스를 활용한 가장 일반적인 오버라이딩
 

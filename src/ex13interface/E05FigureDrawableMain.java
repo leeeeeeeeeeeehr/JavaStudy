@@ -19,13 +19,19 @@ public class E05FigureDrawableMain {
 		draw()를 호출하려면 다운캐스팅 해야 한다. */
 		((Circle)figure).draw("나도 원");
 		
+		System.out.println();
+		
 		IFigure fig1 = new Rectangle(100, 90);
 		fig1.area("사각형");
 		((Rectangle)fig1).draw("나도 사각형");
 		
+		System.out.println();
+		
 		IDrawable draw = new Triangle(100, 90);
 		draw.draw("삼각형");
 		((Triangle)draw).area("나도 삼각형");
+		
+		System.out.println();
 		
 		// 자식 타입 인스턴스를 참조하므로 별도의 형 변환 없이 모두 호출할 수 있다.
 		Circle circle = new Circle(40);

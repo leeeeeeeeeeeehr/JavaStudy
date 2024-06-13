@@ -1,4 +1,4 @@
-package ex16lambda;
+package ex18lambda;
 
 public class Human {
 	/* 멤버변수: 이름, 성별, 점수

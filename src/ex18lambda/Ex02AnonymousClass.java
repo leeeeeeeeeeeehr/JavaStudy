@@ -1,4 +1,4 @@
-package ex16lambda;
+package ex18lambda;
 
 /* 2. 익명 클래스를 통한 오버라이딩
 
