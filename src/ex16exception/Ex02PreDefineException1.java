@@ -33,7 +33,7 @@ public class Ex02PreDefineException1 {
 			// 예외 메세지 1: 개발자가 임의로 메세지를 출력한다
 			System.out.println("\n예외가 발생했어요.");
 			// 예외 메세지 2: 간략한 설명을 출력한다.
-			System.out.println("\n예외 메세지: " + e.getMessage());
+			System.out.println("\n\n예외 메세지: " + e.getMessage());
 			System.out.println();
 			// 예외 메세지 3: 가장 많이 사용되는 방법으로 예외에 대한 디테일한 설명을 출력한다.
 			e.printStackTrace();

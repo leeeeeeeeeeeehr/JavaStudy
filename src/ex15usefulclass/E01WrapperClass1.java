@@ -41,6 +41,7 @@ public class E01WrapperClass1 {
 		Integer numObj1 = 100;
 		Integer numObj2 = 200;
 		
+		// AutoUnboxing
 		int num3 = numObj1;
 		
 		// 객체이지만 정수처럼 연산이 가능하다.

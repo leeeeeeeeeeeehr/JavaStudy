@@ -68,14 +68,14 @@ public class Ex05TreeSetMain {
 		// set 컬렉션이므로 중복 저장은 허용되지 않는다.
 		tree1.add(2);
 
-		System.out.println("저장된 데이터 수: " + tree1.size() + "개");		// 4개가 출력된다.
+		System.out.println("저장된 데이터 수: " + tree1.size() + "개\n");		// 4개가 출력된다.
 		
+		System.out.println("=== 저장된 데이터 ===");
 		// 오름차순으로 정렬된 상태로 출력된다.
 		Iterator<Integer> itr = tree1.iterator();
 		while (itr.hasNext()) {
 			System.out.println(itr.next());
 		}
-		System.out.println();
 		
 		/////////////////////////////////////////////////////////////////////
 		
@@ -88,6 +88,8 @@ public class Ex05TreeSetMain {
 		tree2.add(new MyString("JavaWeb"));
 				
 		Iterator<MyString> it = tree2.iterator();
+		
+		System.out.println("\n=== 저장된 데이터 ===");
 		while (it.hasNext()) {
 			System.out.println(it.next());
 		}

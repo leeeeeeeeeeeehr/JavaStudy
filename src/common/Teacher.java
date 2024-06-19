@@ -20,7 +20,7 @@ public class Teacher extends Person {
 	
 	/* hashCode()
 	: 인스턴스가 가진 고유한 주소값을 정수형으로 반환해준다.
-	따라서 서로 다른 인스턴스라면 다른 해시값을 가지게 돠ㅣㄴ다.
+	따라서 서로 다른 인스턴스라면 다른 해시값을 가지게 된다.
 	정수형 멤버변수는 그냥 사용하면 되고
 	인스턴스형 멤버변수는 hashCode()를 통해 정수값으로 반환되는 해시값을 사용하면 된다. */
 	@Override
@@ -31,12 +31,13 @@ public class Teacher extends Person {
 //		System.out.println("returnCode1 = " + returnCode1);
 		
 		/* 방법 2
-		: 방법 1이 번거롭다면 Objects 클래스의 정적 메서드인 hah()를 사용해도 된다.
+		: 방법 1이 번거롭다면 Objects 클래스의 정적 메서드인 hash()를 사용해도 된다.
 		맴버변수의 갯수만큼 인수로 전달하면 위와 동일하게 고유한 주소값을 정수형으로 반환해준다. */
 		int returnCode2 = Objects.hash(super.getAge(), this.subject);
 		System.out.println("returnCode2 = " + returnCode2);
 		
 		// 방법 1, 방법 2 둘 다 사용할 수 있다.
+//		return returnCode1;
 		return returnCode2;
 	}
 	

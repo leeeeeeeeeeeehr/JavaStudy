@@ -45,13 +45,13 @@ public class Ex04HashSet1 {
 		System.out.println();
 		
 		// size()를 통해 저장된 인스턴스의 갯수를 출력한다.
-		System.out.println("[중복 저장 전 객체 수] " + set.size());		// 5개 출력된다.
+		System.out.println("중복 저장 전 객체 수: " + set.size());		// 5개 출력된다.
 		
 		/* 기본 클래스의 인스턴스 중복 저장
 		: 기본 클래스인 경우 별도의 오버라이딩 없이도 중복이 제거된다.
 		따라서 아래의 add() 메서드는 false를 반환한다. */
-		System.out.println(set.add(varString2) ? "저장 성공" : "저장 실패");
-		System.out.println("[중복 저장 후 객체 수] " + set.size());
+		System.out.println(set.add(varString2) ? "* varString2 저장 성공 *" : "* varString2 저장 실패 *");
+		System.out.println("중복 저장 후 객체 수: " + set.size());
 		
 		System.out.println();
 		
@@ -60,6 +60,7 @@ public class Ex04HashSet1 {
 		
 		// 1. set 참조 변수를 통해 Iterator 인스턴스를 생성한다.
 		Iterator itr = set.iterator();
+		
 		// 2. 인출할 인스턴스가 있는지 확인한다.
 		while (itr.hasNext()) {
 			// 3. true가 반환되면 next()를 이용해 인스턴스를 인출한다.
@@ -68,7 +69,7 @@ public class Ex04HashSet1 {
 			우리가 직접 정의한 클래스에 대해서만 instanceof를 통해 타입을 확인한 후 다운캐스팅하여 출력한다.
 			만약 다운캐스팅을 하지 않으면 자식 멤버에 접근할 수 없으므로 getName()을 호출할 수 없다. */
 			if (object instanceof Teacher) {
-				System.out.println("Teacher 객체 => " + ((Teacher)object).getName());
+				System.out.println("Teacher 객체: " + ((Teacher)object).getName());
 			}
 			else {
 				System.out.println("저장된 객체: " + object);
@@ -92,8 +93,9 @@ public class Ex04HashSet1 {
 		/* 전체 삭제
 		: List 컬렉션과 동일하다. */
 		set.clear();												// 전체 삭제
-		System.out.println("전체 삭제: " + set.removeAll(set));		// 이미 전체 삭제를 했기 때문에 false가 출력된다.
-		System.out.println("[전체 삭제 후 객체 수] " + set.size());
+		System.out.println("2번째 전체 삭제: " + set.removeAll(set));		// 이미 전체 삭제를 했기 때문에 false가 출력된다.
+
+		System.out.println("전체 삭제 후 객체 수: " + set.size());
 
 	}
 

@@ -33,7 +33,7 @@ public class Ex03Lambda {
 		ISchool3 인터페이스의 추상 메서드를 통해 매개변수의 타입을 유추할 수 있으므로
 		String을 제거할 수 있다.
 		또한, 실행문이 하나인 경우에는 중괄호도 생략할 수 있다. */
-		ISchool3 sch2 = str -> System.out.println(str + "완전 간단하다!");
+		ISchool3 sch2 = str -> System.out.println(str + " 완전 간단하다!");
 		sch2.studyLambda("람다식");
 	}
 
