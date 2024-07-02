@@ -45,7 +45,7 @@ public class Ex08AsList {
 		boolean isAdd = list.add("탱크");
 		
 		System.out.println("-------------------");
-		System.out.println("add 결과: " + isAdd);
+		System.out.println("복사 후 add 결과: " + isAdd);
 		System.out.println("-------------------\n");
 		listPrint("출력 2", list);
 		System.out.println();

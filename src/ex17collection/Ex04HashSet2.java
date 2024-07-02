@@ -19,6 +19,7 @@ public class Ex04HashSet2 {
 		hashSet.add(t1);
 		hashSet.add(t2);
 		hashSet.add(t3);
+		System.out.println("----------------------");
 		
 		// 3개가 모두 저장된다.
 		System.out.println("hashSet의 크기 1: " + hashSet.size());

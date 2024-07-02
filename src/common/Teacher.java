@@ -48,8 +48,7 @@ public class Teacher extends Person {
 	public boolean equals(Object obj) {
 		// 매개변수로 전달 받은 인스턴스를 다운캐스팅 한다.
 		Teacher teacher = (Teacher)obj;
-		
-		System.out.println("equals() 호출됨");
+		System.out.println("----------------------");
 		
 		/* age는 int형이므로 비교연산자를 통해 비교한다.
 		subject는 String이므로 equals() 메서드를 통해 비교해야 한다. */

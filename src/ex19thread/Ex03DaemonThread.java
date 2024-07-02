@@ -44,7 +44,7 @@ class NormalThread extends Thread {
 		반복 횟수와 쓰레드명을 출력한다. */
 		for (int i = 1; i <= 10; i++) {
 			System.out.printf("%s ) i = %d%n", getName(), i);
-			sleep(20000);
+			sleep(2000);
 		}
 		System.out.println();
 	}
